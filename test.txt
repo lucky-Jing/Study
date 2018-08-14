@@ -1,7 +1,16 @@
 1、git init 把当前目录变成Git可以管理的仓库
 2、注意：千万不要手动去修改.git目录里面的文件
-3、把文件添加到版本库：
+3、把文件添加到版本库：(工作区，暂存区，版本库)
    a.新建一个文本，例如test.txt
    b.git add test.txt 把文件添加到仓库
    c.git commit -m "提交信息" 把文件提交到仓库
-   
+4、版本回退
+   a.git reset --hard HEAD^  回退到上一次提交的状态
+   b.git reset --hard HEAD^^ 回退到上两次提交时的状态
+   c.git reset --hard 提交ID 回退到指定ID的提交状态
+5、连接远程版本库（gitHub）
+   a.生成SSH-KEY: ssh-keygen -t rsa -C "just_live2013@163.com" 生成一个私钥（id_rsa） ，一个公钥（id_rsa.pub）
+   b.将公钥（id_rsa.pub）的信息复制（不要使用记事本打开），在github网站添加SSH KEY
+   c.验证是否能连接成功 ssh -T git@github.com
+   d.添加远程仓库地址： git remote add origin git@github.com:lucky-Jing/Study
+   e.上传本地仓库到远程仓库：git push origin master
