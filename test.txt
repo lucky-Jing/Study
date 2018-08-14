@@ -12,5 +12,7 @@
    a.生成SSH-KEY: ssh-keygen -t rsa -C "just_live2013@163.com" 生成一个私钥（id_rsa） ，一个公钥（id_rsa.pub）
    b.将公钥（id_rsa.pub）的信息复制（不要使用记事本打开），在github网站添加SSH KEY
    c.验证是否能连接成功 ssh -T git@github.com
-   d.添加远程仓库地址： git remote add origin git@github.com:lucky-Jing/Study
+   d.添加/关联远程仓库地址： git remote add origin git@github.com:lucky-Jing/Study
    e.上传本地仓库到远程仓库：git push origin master
+   f.删除关联远程仓库地址：git remote rm origin git@github.com:lucky-Jing/Study
+   g.拉取远程仓库内容：git pull origin master
