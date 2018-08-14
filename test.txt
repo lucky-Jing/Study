@@ -16,3 +16,5 @@
    e.上传本地仓库到远程仓库：git push origin master
    f.删除关联远程仓库地址：git remote rm origin git@github.com:lucky-Jing/Study
    g.拉取远程仓库内容：git pull origin master
+   h.远程克隆：git clone git@github.com:lucky-Jing/Study
+   e.忽略文件不提交：.gitignore 文件 内容为不提交的文件名
